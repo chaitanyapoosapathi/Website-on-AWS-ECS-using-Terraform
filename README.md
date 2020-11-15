@@ -1,6 +1,6 @@
-- I have used terraform for infrastructure provisioning in this project
+- I have used terraform for infrastructure provisioning
 - The application can be reached from https://northone.chaits.ca
-- Please use username "northone" and password "northone" which connects to the user i have already created for you, user info is backed on postgres DB
+- the website is running with a drupal image will be backed on postgres 
 - Scales both on task level and instance level
 - I have also created a docker-compose file for local development
 - This project creates load balancer and auto scaling with rds backend 
