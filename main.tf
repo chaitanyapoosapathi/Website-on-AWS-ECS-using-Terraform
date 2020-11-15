@@ -1,10 +1,10 @@
 terraform {
   backend "s3" {
-    bucket         = "assignment-bucket-northone"
-    key            = "assignmentbucket.tfstate"
+    bucket         = "bucket"
+    key            = "bucket.tfstate"
     region         = "ca-central-1"
     encrypt        = true
-    dynamodb_table = "assignment-bucket-northone-tf-state-lock"
+    dynamodb_table = "-tf-state-lock"
   }
 }
 
