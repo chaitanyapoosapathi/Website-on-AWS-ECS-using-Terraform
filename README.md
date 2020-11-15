@@ -1,5 +1,4 @@
 - I have used terraform for infrastructure provisioning
-- The application can be reached from https://northone.chaits.ca
 - the website is running with a drupal image will be backed on postgres 
 - Scales both on task level and instance level
 - I have also created a docker-compose file for local development
