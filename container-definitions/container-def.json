@@ -1,0 +1,44 @@
+[
+    {
+      "name": "drupal",
+      "image": "drupal:9.0.7",
+      "cpu": 1,
+      "memory": 256,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostport": 0 
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": { 
+          "awslogs-group" : "/ecs/northone",
+          "awslogs-region": "ca-central-1"
+        }
+      },
+      "mountPoints": [
+        {
+          "readOnly": false,
+          "containerPath": "/var/www/html/sites",
+          "sourceVolume": "drupal-sites"
+        },
+        {
+          "readOnly": false,
+          "containerPath": "/var/www/html/modules",
+          "sourceVolume": "drupal-modules"
+        },
+        {
+          "readOnly": false,
+          "containerPath": "/var/www/html/profiles",
+          "sourceVolume": "drupal-profiles"
+        },
+        {
+          "readOnly": false,
+          "containerPath": "/var/www/html/themes",
+          "sourceVolume": "drupal-themes"
+        }
+      ]
+    }
+]
