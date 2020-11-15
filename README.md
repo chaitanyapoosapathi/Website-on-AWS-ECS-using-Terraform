@@ -1,0 +1,7 @@
+- I have used terraform for infrastructure provisioning in this project
+- The application can be reached from https://northone.chaits.ca
+- Please use username "northone" and password "northone" which connects to the user i have already created for you, user info is backed on postgres DB
+- Scales both on task level and instance level
+- I have also created a docker-compose file for local development
+- This project creates load balancer and auto scaling with rds backend 
+- Uses ECS for hosting docker containers
