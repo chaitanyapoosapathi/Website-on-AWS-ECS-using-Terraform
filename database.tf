@@ -8,8 +8,6 @@ resource "aws_db_subnet_group" "main" {
   tags = local.common_tags
   
 }
-
-
 resource "aws_security_group" "rds" {
   name        = "${local.prefix}-rds-inbound-access"
   vpc_id      = aws_vpc.main.id
