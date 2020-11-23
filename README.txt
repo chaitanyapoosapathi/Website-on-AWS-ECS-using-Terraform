@@ -5,3 +5,4 @@
 - This project creates load balancer and auto scaling with rds backend 
 - Uses ECS for hosting docker containers
 
+
