@@ -4,3 +4,4 @@
 - I have also created a docker-compose file for local development
 - This project creates load balancer and auto scaling with rds backend 
 - Uses ECS for hosting docker containers
+
