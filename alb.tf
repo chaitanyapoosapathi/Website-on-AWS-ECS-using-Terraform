@@ -7,6 +7,7 @@ resource "aws_lb" "test-lb" {
   security_groups = [aws_security_group.lb.id]
 }
 
+
 resource "aws_security_group" "lb" {
   name   = "${local.prefix}-lb"
   vpc_id = aws_vpc.main.id
